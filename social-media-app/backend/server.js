@@ -31,7 +31,7 @@ connectDB();
 // Without this, the browser blocks the request!
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:3000", // React runs here, or production URL
+    origin: process.env.CLIENT_URL, // React runs here, or production URL
     credentials: true,
   })
 );
