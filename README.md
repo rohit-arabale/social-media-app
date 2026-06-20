@@ -164,22 +164,6 @@ http://localhost:3000
 
 ---
 
-## Screenshots
-
-### Login Page
-
-![Login](screenshots/login.png)
-
-### Home Feed
-
-![Feed](screenshots/feed.png)
-
-### User Profile
-
-![Profile](screenshots/profile.png)
-
----
-
 ## Future Improvements
 
 * Follow / Unfollow Users
@@ -210,9 +194,9 @@ This project demonstrates:
 
 ## Author
 
-Soham
+Rohit
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/rohit-arabale
 
 ---
 
