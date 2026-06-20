@@ -1,0 +1,118 @@
+/* Home.css */
+
+.home-layout {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.feed-column {
+  min-width: 0; /* Prevent overflow */
+}
+
+/* Quick Create */
+.quick-create {
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.quick-create-inner {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.quick-create-input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  background: var(--bg-2);
+  border: 1.5px solid var(--border);
+  border-radius: 99px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.quick-create-input:hover {
+  border-color: var(--accent);
+  color: var(--text);
+  background: var(--accent-bg);
+  text-decoration: none;
+}
+
+/* Empty state */
+.empty-feed {
+  padding: 3rem 2rem;
+  text-align: center;
+  color: var(--text-2);
+}
+.empty-icon {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+.empty-feed h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+.empty-feed p {
+  color: var(--text-muted);
+}
+
+/* Load more */
+.load-more {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+/* Sidebar */
+.sidebar-column {
+  position: sticky;
+  top: calc(var(--navbar-height) + 1rem);
+}
+
+.sidebar-card {
+  padding: 1.25rem;
+}
+
+.sidebar-title {
+  font-size: 1rem;
+  font-family: var(--font-head);
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-text {
+  font-size: 0.88rem;
+  color: var(--text-2);
+  line-height: 1.6;
+}
+
+.sidebar-credit {
+  margin-top: 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 720px) {
+  .home-layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar-column {
+    display: none; /* Hide sidebar on mobile */
+  }
+}
